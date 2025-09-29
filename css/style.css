@@ -35,8 +35,7 @@ body {
     font-weight: 400;
     font-size: 16.5px;
     padding: 6px 30px;
-    /* border-right: 1px solid #fff; */
-    /* min-height: 50px; */
+    max-width: 165px;
 }
 .header .navbar .navbar-nav .nav-item .nav-link:after {
     content: '';
@@ -188,3 +187,119 @@ color: #000;
   body.arabic #enBtn {
     display: block;
   }
+  .our-mission {
+    font-weight: bold;
+    font-style: italic;
+  }
+  .banner-a {
+    display: none;
+  }
+  .banner-mobile {
+    display: none;
+  }
+  .banner-mobile img {
+    width: 100%;
+  }
+  .awarenesstitle {
+    font-style: italic;
+  }
+  .arabic .banner-a {
+    display: block;
+  }
+  .arabic .banner-e {
+    display: none;
+  }
+  .arabic .ms-auto {
+    margin-left: 0 !important;
+    margin-right: auto !important;
+  }
+  .arabic .header .navbar .navbar-nav .nav-item .nav-link:after {
+    content: '';
+    height: 61.5px;
+    width: 1px;
+    position: absolute;
+    right: auto;
+    left: 0;
+    top: 0;
+    background: #fff;
+}
+.arabic .footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    margin-right: 0;
+    margin-left: 200px;
+}
+
+@media (min-width: 276px) and (max-width: 768px) {
+    
+    .header .navbar-brand img {
+        width: 200px;
+    }
+    .navbar-toggler-icon {
+        background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='white' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+
+    }
+    .header .navbar .navbar-nav .nav-item .nav-link {
+        max-width: 100%;
+    }
+    .header .navbar .navbar-nav .nav-item .nav-link:after {
+        display: none;
+    }
+    .banner-mobile {
+        display: block;
+      }
+    .banner {
+        display: none;
+      }
+      .main-content {
+        padding: 28px;
+        text-align: justify;
+    }
+    .footer {
+        padding: 30px;
+    }
+    .footer ul {
+        margin-right: 0px;
+    }
+    .awarness-details {
+        display: block;
+        justify-content: space-evenly;
+  }
+  .box {
+    width: 100%;
+    margin-bottom: 20px;
+    height: auto;
+    }
+    .main-content h1 {
+        font-size: 32px;
+        font-weight: bold;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .header .navbar-brand img {
+        width: 200px;
+    }
+    .header .navbar .navbar-nav .nav-item .nav-link {
+        color: #fff;
+        font-size: 15px;
+        padding: 10px 14px;
+        max-width: 165px;
+    }
+}
+@media (min-width: 769px) and (max-width: 999px) {
+    .header .navbar-brand img {
+        width: 200px;
+    }
+    .navbar-toggler-icon {
+        background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='white' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+
+    }
+    .header .navbar .navbar-nav .nav-item .nav-link {
+        max-width: 100%;
+    }
+    .header .navbar .navbar-nav .nav-item .nav-link:after {
+        display: none;
+    }
+}

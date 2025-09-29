@@ -16,7 +16,7 @@
             <div class="row">
                 <div class="col">
                     <nav class="navbar navbar-expand-lg navbar-light">
-                        <a class="navbar-brand" href="#">
+                        <a class="navbar-brand" href="index.html">
                             <img src="images/logo.png" alt="logo">
                         </a>
                         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -25,25 +25,26 @@
                       
                         <div class="collapse navbar-collapse" id="navbarSupportedContent">
                           <ul class="navbar-nav ms-auto  justify-content-end align-items-center">
-                            <li class="nav-item">
-                              <a class="nav-link" href="policies.html">POLICIES & <br> DISCLOSURES</a>
+                            <li class="nav-item" id="menuPolicy">
+                              <a class="nav-link" data-i18n="menupolicy" href="policies.html">POLICIES &  DISCLOSURES</a>
                             </li>
-                            <li class="nav-item">
-                              <a class="nav-link" href="awareness.html">AWARENESS</a>
+                            <li class="nav-item" id="menuAwareness">
+                              <a class="nav-link" data-i18n="menuawareness" href="awareness.html">AWARENESS</a>
                             </li>
                             <li class="nav-item active">
-                                <a class="nav-link" href="map.html">MAP</a>
+                                <a class="nav-link" data-i18n="menumap" href="map.html">MAP</a>
                               </li>
                               <li class="nav-item">
-                                <a class="nav-link" href="share-experience.html">SHARE YOUR <br>
+                                <a class="nav-link" data-i18n="menushare" href="share-experience.html">SHARE YOUR 
                                     EXPERIENCE </a>
                               </li>
                               <li class="nav-item">
-                                <a class="nav-link" href="shopping-at-ddf.html">SHOPPING <br>
+                                <a class="nav-link" data-i18n="menushopping" href="shopping-at-ddf.html">SHOPPING 
                                     AT DDF </a>
                               </li>
                               <li class="nav-item">
-                                <a class="nav-link" href="#">العربیة </a>
+                                <a class="nav-link" id="arBtn" href="#">العربیة </a>
+                                <a class="nav-link" id="enBtn" href="#">English </a>
                               </li>
                            
                           </ul>
@@ -58,12 +59,12 @@
     </div> -->
     <div class="main-content">
         <div class="map">
-            <h1>CONCOURSE - D</h1>
+            <h1 data-i18n="maptitle">CONCOURSE - D</h1>
             <img src="images/map.png" alt="">
         </div>
     </div>
     <div class="footer">
-        <div class="d-flex">
+        <div class="d-md-flex">
             <ul>
                 <li class="title">Quick Links</li>
                 <li><a href="#">Home</a></li>
@@ -81,7 +82,9 @@
     </div>
    
 <script src="js/jquery.min.js"></script> 
-<script src="js/bootstrap.bundle.min.js"></script> 
+<script src="js/bootstrap.bundle.min.js"></script>  
+<script src="js/jquery.i18n.min.js"></script> 
+<script src="js/translation.js"></script> 
 <script src="js/script.js"></script> 
 </body>
 </html>

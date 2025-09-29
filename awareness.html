@@ -16,7 +16,7 @@
             <div class="row">
                 <div class="col">
                     <nav class="navbar navbar-expand-lg navbar-light">
-                        <a class="navbar-brand" href="#">
+                        <a class="navbar-brand" href="index.html">
                             <img src="images/logo.png" alt="logo">
                         </a>
                         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -25,25 +25,26 @@
                       
                         <div class="collapse navbar-collapse" id="navbarSupportedContent">
                             <ul class="navbar-nav ms-auto  justify-content-end align-items-center">
-                                <li class="nav-item">
-                                  <a class="nav-link" href="policies.html">POLICIES & <br> DISCLOSURES</a>
+                                <li class="nav-item" id="menuPolicy">
+                                  <a class="nav-link" data-i18n="menupolicy" href="policies.html">POLICIES &  DISCLOSURES</a>
                                 </li>
-                                <li class="nav-item active">
-                                  <a class="nav-link" href="awareness.html">AWARENESS</a>
+                                <li class="nav-item active" id="menuAwareness">
+                                  <a class="nav-link" data-i18n="menuawareness" href="awareness.html">AWARENESS</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="map.html">MAP</a>
+                                    <a class="nav-link" data-i18n="menumap" href="map.html">MAP</a>
                                   </li>
                                   <li class="nav-item">
-                                    <a class="nav-link" href="share-experience.html">SHARE YOUR <br>
+                                    <a class="nav-link" data-i18n="menushare" href="share-experience.html">SHARE YOUR 
                                         EXPERIENCE </a>
                                   </li>
                                   <li class="nav-item">
-                                    <a class="nav-link" href="shopping-at-ddf.html">SHOPPING <br>
+                                    <a class="nav-link" data-i18n="menushopping" href="shopping-at-ddf.html">SHOPPING 
                                         AT DDF </a>
                                   </li>
                                   <li class="nav-item">
-                                    <a class="nav-link" href="#">العربیة </a>
+                                    <a class="nav-link" id="arBtn" href="#">العربیة </a>
+                                    <a class="nav-link" id="enBtn" href="#">English </a>
                                   </li>
                                
                               </ul>
@@ -57,7 +58,7 @@
         <img src="images/banner-2.jpg" alt="banner">
     </div> -->
     <div class="main-content">
-        <h1>Awareness</h1>
+        <h1 class="awarenesstitle" data-i18n="awarenesstitle">Awareness</h1>
         <p>
             Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis
 nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum
@@ -75,26 +76,26 @@ nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commod
         <div class="awarness-details">
             <div class="box">
                 <img src="images/icon-1.png" alt="">
-                <h5>People of Determination</h5>
+                <h5 data-i18n="peopledetermination">People of Determination</h5>
                 <p>Lorem ipsum dolor sit amet, consectetuer adipiscing
                     elit, sed diam nonummy nibh euismod tincidunt ut </p>
             </div>
             <div class="box">
                 <img src="images/icon-2.png" alt="">
-                <h5>Fraud Awareness & Prevention </h5>
+                <h5  data-i18n="fraudawareness">Fraud Awareness & Prevention </h5>
                 <p>Lorem ipsum dolor sit amet, consectetuer adipiscing
                     elit, sed diam nonummy nibh euismod tincidunt ut </p>
             </div>
             <div class="box">
                 <img src="images/icon-3.png" alt="">
-                <h5>Consumer Protection & Awareness </h5>
+                <h5 data-i18n="consumerprotection">Consumer Protection & Awareness </h5>
                 <p>Lorem ipsum dolor sit amet, consectetuer adipiscing
                     elit, sed diam nonummy nibh euismod tincidunt ut </p>
             </div>
         </div>
     </div>
     <div class="footer">
-        <div class="d-flex">
+        <div class="d-md-flex">
             <ul>
                 <li class="title">Quick Links</li>
                 <li><a href="#">Home</a></li>
@@ -112,7 +113,9 @@ nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commod
     </div>
    
 <script src="js/jquery.min.js"></script> 
-<script src="js/bootstrap.bundle.min.js"></script> 
+<script src="js/bootstrap.bundle.min.js"></script>  
+<script src="js/jquery.i18n.min.js"></script> 
+<script src="js/translation.js"></script> 
 <script src="js/script.js"></script> 
 </body>
 </html>

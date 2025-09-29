@@ -25,25 +25,26 @@
                       
                         <div class="collapse navbar-collapse" id="navbarSupportedContent">
                           <ul class="navbar-nav ms-auto  justify-content-end align-items-center">
-                            <li class="nav-item active">
-                              <a class="nav-link" href="policies.html">POLICIES & <br> DISCLOSURES</a>
+                            <li class="nav-item active" id="menuPolicy">
+                              <a class="nav-link" data-i18n="menupolicy" href="policies.html">POLICIES &  DISCLOSURES</a>
+                            </li>
+                            <li class="nav-item" id="menuAwareness">
+                              <a class="nav-link" data-i18n="menuawareness" href="awareness.html">AWARENESS</a>
                             </li>
                             <li class="nav-item">
-                              <a class="nav-link" href="awareness.html">AWARENESS</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="map.html">MAP</a>
+                                <a class="nav-link" data-i18n="menumap" href="map.html">MAP</a>
                               </li>
                               <li class="nav-item">
-                                <a class="nav-link" href="share-experience.html">SHARE YOUR <br>
+                                <a class="nav-link" data-i18n="menushare" href="share-experience.html">SHARE YOUR 
                                     EXPERIENCE </a>
                               </li>
                               <li class="nav-item">
-                                <a class="nav-link" href="shopping-at-ddf.html">SHOPPING <br>
+                                <a class="nav-link" data-i18n="menushopping" href="shopping-at-ddf.html">SHOPPING 
                                     AT DDF </a>
                               </li>
                               <li class="nav-item">
-                                <a class="nav-link" href="#">العربیة </a>
+                                <a class="nav-link" id="arBtn" href="#">العربیة </a>
+                                <a class="nav-link" id="enBtn" href="#">English </a>
                               </li>
                            
                           </ul>
@@ -56,8 +57,11 @@
     <div class="banner">
         <img src="images/banner-2.jpg" alt="banner">
     </div>
+    <div class="banner-mobile">
+      <img src="images/mobilebanner-2-i.jpg" alt="banner">
+  </div>
     <div class="main-content">
-        <h1>Policies & Disclosures</h1>
+        <h1  data-i18n="policytitle">Policies & Disclosures</h1>
         <p>
             Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod 
         </p>
@@ -74,7 +78,7 @@ aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation 
         </p>
     </div>
     <div class="footer">
-        <div class="d-flex">
+        <div class="d-md-flex">
             <ul>
                 <li class="title">Quick Links</li>
                 <li><a href="#">Home</a></li>
@@ -92,7 +96,9 @@ aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation 
     </div>
    
 <script src="js/jquery.min.js"></script> 
-<script src="js/bootstrap.bundle.min.js"></script> 
+<script src="js/bootstrap.bundle.min.js"></script>  
+<script src="js/jquery.i18n.min.js"></script> 
+<script src="js/translation.js"></script> 
 <script src="js/script.js"></script> 
 </body>
 </html>

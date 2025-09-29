@@ -2,13 +2,50 @@ $(document).ready(function () {
     const translations = {
       en: {
         title: "Our Mission",
-        description: "This is an English description.",
-        footer: "Thank you for visiting!"
+        menupolicy : "POLICIES & DISCLOSURES",
+        menuawareness: "AWARENESS",
+        menumap: "MAP",
+        menushare: "SHARE YOUR EXPERIENCE",
+        menushopping : "SHOPPING  AT DDF",
+        ourmission: "Our Mission",
+        policytitle: "Policies & Disclosures",
+        maptitle: "CONCOURSE - D",
+        awarenesstitle: "Awareness",
+        peopledetermination: "People of Determination",
+        fraudawareness: "Fraud Awareness & Prevention",
+        consumerprotection: "Consumer Protection & Awareness",
+        fullname :"Full Name",
+        phone :"Phone",
+        email :"Email address",
+        region :"Region",
+        city :"City",
+        subject :"Subject",
+        yourmessage :"Your Message"
+
+        
+
       },
       ar: {
         title: "مرحبا",
-        description: "هذا وصف باللغة العربية.",
-        footer: "شكرا لزيارتك!"
+        menupolicy : "السياسات والإفصاحات",
+        menuawareness:"وعي",
+        menumap: "رسم خريطة",
+        menushare: "شارك تجربتك",
+        menushopping : "التسوق في سوق دبي الحرة",
+        ourmission: "مهمتنا",
+        policytitle: "كـــــونكــورس - دي",
+        maptitle: "كـــــونكــورس - دي",
+        awarenesstitle: "وعي",
+        peopledetermination: "أصحاب الهمم",
+        fraudawareness: "التو��ة �الاحت�ال والوقا�ة منه",
+        consumerprotection: "حما�ة وتو��ة المستهلك",
+        fullname :"الاسم الكامل",
+        phone :"هاتف",
+        email :"عنوان البريد الإلكتروني",
+        region :"منطقة",
+        city :"مدينة",
+        subject :"موضوع",
+        yourmessage :"رسالتك"
       }
     };
   
@@ -34,5 +71,6 @@ $(document).ready(function () {
     // Load saved language or default English
     const savedLang = localStorage.getItem("lang") || "en";
     applyLanguage(savedLang);
+
   });
   
