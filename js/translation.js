@@ -20,7 +20,16 @@ $(document).ready(function () {
         region :"Region",
         city :"City",
         subject :"Subject",
-        yourmessage :"Your Message"
+        yourmessage :"Your Message",
+        quicklnks :"Quick Links",
+        footerhome :"Home",
+        branches :"Branches",
+        contactus :"Contact Us",
+        policies :"Policies",
+        faq :"FAQ",
+        services :"Services",
+        foreighcurrencyexchange :"Foreign Currency Exchange",
+        wholesalebanknotes :"Wholesale Banknotes"
 
         
 
@@ -45,7 +54,16 @@ $(document).ready(function () {
         region :"منطقة",
         city :"مدينة",
         subject :"موضوع",
-        yourmessage :"رسالتك"
+        yourmessage :"رسالتك",
+        quicklnks :"روابط سريعة",
+        footerhome :"بيت",
+        branches :"الفروع",
+        contactus :"اتصل بنا",
+        policies :"السياسات",
+        faq :"التعليمات",
+        services :"خدمات",
+        foreighcurrencyexchange :"صرف العملات الأجنبية",
+        wholesalebanknotes :"الأوراق النقدية بالجملة"
       }
     };
   

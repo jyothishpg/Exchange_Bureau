@@ -1,4 +1,25 @@
-var cities = ["Kochi", "Delhi", "Mumbai", "Chennai", "Bangalore"];
+var cities = [
+  "Deira",
+  "Bur Dubai",
+  "Karama",
+  "Satwa",
+  "Jumeirah",
+  "Al Barsha",
+  "Dubai Marina",
+  "Palm Jumeirah",
+  "Downtown Dubai",
+  "Business Bay",
+  "Al Qusais",
+  "Al Nahda",
+  "Al Quoz",
+  "Jebel Ali",
+  "Mirdif",
+  "International City",
+  "Discovery Gardens",
+  "Dubai Silicon Oasis",
+  "Arabian Ranches",
+  "Dubailand"
+];
 
 $("#city").autocomplete({
   source: cities,

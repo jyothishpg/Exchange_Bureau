@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Boiler plate</title>
+  <title>Exchange Bureau</title>
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/jquery-ui.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -20,8 +20,13 @@
                         <a class="navbar-brand" href="index.html">
                             <img src="images/logo.png" alt="logo">
                         </a>
-                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                          <span class="navbar-toggler-icon"></span>
+                        <button class="navbar-toggler collapsed" type="button"
+                          data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                          aria-controls="navbarSupportedContent" aria-expanded="false"
+                          aria-label="Toggle navigation">
+                          <span class="toggler-icon top-bar"></span>
+                          <span class="toggler-icon middle-bar"></span>
+                          <span class="toggler-icon bottom-bar"></span>
                         </button>
                       
                         <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -61,49 +66,49 @@
     <div class="main-content">
         <div class="container">
             <div class="row justify-content-evenly">
-                <div class="col-8">
-                    <form>
+                <div class="col-lg-8">
+                    <form action="contact.php" method="post">
                         <div class="row">
                             <div class="col-12">
                                 <div class="form-group">
                                     <label data-i18n="fullname" for="fName">Full Name <span>*</span></label>
-                                    <input type="text" class="form-control" id="fName" aria-describedby="fName">
+                                    <input type="text" class="form-control" id="fName" name="name" aria-describedby="fName">
                                   </div>
                             </div>
                         </div>
                         <div class="row">
-                            <div class="col-6">
+                            <div class="col-md-6">
                                 <div class="form-group">
                                     <label data-i18n="phone" for="phone">Phone <span>*</span></label>
-                                    <input type="text" class="form-control" id="phone" aria-describedby="phone">
+                                    <input type="text" class="form-control" id="phone" name="phone" aria-describedby="phone">
                                   </div>
                             </div>
-                            <div class="col-6">
+                            <div class="col-md-6">
                                 <div class="form-group">
                                     <label data-i18n="email" for="email">Email address <span>*</span></label>
-                                    <input type="email" class="form-control" id="email" aria-describedby="email">
+                                    <input type="email" class="form-control" id="email" name="email" aria-describedby="email">
                                   </div>
                             </div>
                         </div>
                         <div class="row">
-                            <div class="col-6">
+                            <div class="col-md-6">
                                 <div class="form-group">
                                     <label data-i18n="region" for="region">Region <span>*</span></label>
-                                    <input type="text" class="form-control" id="region" aria-describedby="region">
+                                    <input type="text" class="form-control" id="region" name="region" aria-describedby="region">
                                   </div>
                             </div>
-                            <div class="col-6">
+                            <div class="col-md-6">
                                 <div class="form-group">
                                     <label data-i18n="city" for="city">City <span>*</span></label>
-                                    <input type="text" class="form-control select0city" id="city" placeholder="-- Chose --" aria-describedby="city">
+                                    <input type="text" class="form-control select0city" name="city" id="city" placeholder="-- Chose --" aria-describedby="city">
                                   </div>
                             </div>
                         </div>
                         <div class="row">
-                            <div class="col-6">
+                            <div class="col-md-6">
                                 <div class="form-group">
                                     <label data-i18n="subject" for="subject">Subject <span>*</span></label>
-                                    <input type="text" class="form-control select0city" id="subject" aria-describedby="subject">
+                                    <input type="text" class="form-control select0city" id="subject" name="subject" aria-describedby="subject">
                                   </div>
                             </div>
                         </div>
@@ -112,7 +117,7 @@
                                 <div class="form-group">
                                     <label data-i18n="yourmessage" for="subject">Your Message <span>*</span></label>
                                     <div class="textarea-wrapper">
-                                        <textarea rows="7" id="message" class="form-control"></textarea>
+                                        <textarea rows="7" id="message" class="form-control" name="message"></textarea>
                                         <div class="char-count" id="charCount">0/1000</div>
                                     </div>
                                   </div>
@@ -121,7 +126,7 @@
                         <div class="row">
                             <div class="col-12">
                                 <div class="text-end">
-                                    <a href="#" class="btn btn-primary">Submit</a>
+                                    <button type="submit" class="btn btn-primary">Submit</a>
                                 </div>
                             </div>
                         </div>
@@ -133,17 +138,17 @@
     <div class="footer">
         <div class="d-md-flex">
             <ul>
-                <li class="title">Quick Links</li>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Branches</a></li>
-                <li><a href="#">Contact Us</a></li>
-                <li><a href="#">Policies</a></li>
-                <li><a href="#">FAQ</a></li>
+                <li class="title" data-i18n="quicklnks">Quick Links</li>
+                <li><a href="#" data-i18n="footerhome">Home</a></li>
+                <li><a href="#" data-i18n="branches">Branches</a></li>
+                <li><a href="#" data-i18n="contactus">Contact Us</a></li>
+                <li><a href="#" data-i18n="policies">Policies</a></li>
+                <li><a href="#" data-i18n="faq">FAQ</a></li>
             </ul>
             <ul>
-                <li class="title">Services</li>
-                <li><a href="#">Foreign Currency Exchange</a></li>
-                <li><a href="#">Wholesale Banknotes</a></li>
+                <li class="title" data-i18n="services">Services</li>
+                <li><a href="#" data-i18n="foreighcurrencyexchange">Foreign Currency Exchange</a></li>
+                <li><a href="#" data-i18n="wholesalebanknotes">Wholesale Banknotes</a></li>
             </ul>
         </div>
     </div>
