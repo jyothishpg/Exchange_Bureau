@@ -8,6 +8,8 @@ $(document).ready(function () {
         menushare: "SHARE YOUR EXPERIENCE",
         menushopping : "SHOPPING  AT DDF",
         ourmission: "Our Mission",
+        ourvission: "Our Vision",
+        ourjourney: "Our Journey",
         policytitle: "Policies & Disclosures",
         maptitle: "CONCOURSE - D",
         awarenesstitle: "Awareness",
@@ -29,7 +31,8 @@ $(document).ready(function () {
         faq :"FAQ",
         services :"Services",
         foreighcurrencyexchange :"Foreign Currency Exchange",
-        wholesalebanknotes :"Wholesale Banknotes"
+        wholesalebanknotes :"Wholesale Banknotes",
+        whyChooseus :"Why Choose Us"
 
         
 
@@ -42,6 +45,8 @@ $(document).ready(function () {
         menushare: "شارك تجربتك",
         menushopping : "التسوق في سوق دبي الحرة",
         ourmission: "مهمتنا",
+        ourvission: "رؤيتنا",
+        ourjourney: "رحلتنا",
         policytitle: "كـــــونكــورس - دي",
         maptitle: "كـــــونكــورس - دي",
         awarenesstitle: "وعي",
@@ -63,7 +68,8 @@ $(document).ready(function () {
         faq :"التعليمات",
         services :"خدمات",
         foreighcurrencyexchange :"صرف العملات الأجنبية",
-        wholesalebanknotes :"الأوراق النقدية بالجملة"
+        wholesalebanknotes :"الأوراق النقدية بالجملة",
+        whyChooseus :"لماذا تختارنا؟"
       }
     };
   
